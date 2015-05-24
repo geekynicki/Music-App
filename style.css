@@ -1,0 +1,41 @@
+body{
+	background-color: rgb(51, 153, 102);
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 200%;
+	color: rgb(220,220,220);
+}
+
+
+div#box{
+	width:80%;
+	margin-left:10%;
+	border-color: rgb(220,220,220);
+	border-style: solid;
+	margin-bottom:10px;
+}
+
+button{
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 10px;
+	background-image: url(tick.png);
+	height: 100px;
+	width: 100px;
+	background-size: 100px;
+	border: none;
+}
+
+
+img{
+	max-width: 100%;
+}
+
+@media(max-width: 480px){
+	body{
+		text-align: left;
+	}
+	div#box{
+		width:85%;
+	}
+
+}
