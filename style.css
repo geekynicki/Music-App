@@ -7,12 +7,12 @@ body{
 }
 
 div#mainTitle{
-	width:85px;
-	height:85px;
+	width:80px;
+	height:80px;
 	margin-left: auto;
     margin-right: auto;
 	margin-bottom:10px;
-	background-color: rgb(255,255,255);
+	background-color: rgb(232,255,249);
 	border-color: rgb(0, 51, 102);
 	border-style: solid;
 }
