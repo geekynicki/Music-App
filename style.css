@@ -7,8 +7,8 @@ body{
 }
 
 div#mainTitle{
-	width:100px;
-	height:100px;
+	width:85px;
+	height:85px;
 	margin-left: auto;
     margin-right: auto;
 	margin-bottom:10px;
@@ -17,12 +17,12 @@ div#mainTitle{
 	border-style: solid;
 }
 
-h3#gradeTitle{
+h4#gradeTitle{
 	color: rgb(0, 153, 153);
 	margin: 0;
 }
 
-h1#gradeNumber{
+h2#gradeNumber{
 	color: rgb(0, 51, 102);
 	margin: 0;
 }
@@ -36,13 +36,17 @@ div#box{
 	margin-bottom:10px;
 }
 
+a{
+	text-decoration: none;
+}
+
 button{
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 10px;
 	background-image: url(tick.png);
-	height: 75px;
-	width: 75px;
-	background-size: 75px;
+	height: 60px;
+	width: 60px;
+	background-size: 60px;
 	border: none;
 }
 
