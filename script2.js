@@ -1,18 +1,11 @@
 
-//window.onload="initialise()";
+var scales = ["G major", "D major", "A major", "F major", "E minor", "D minor", "G minor"];
 
-var scales = [	"B major", "B&#9837 major", "E&#9837 major", "A&#9837 major", "D&#9837 major",
-				"C# minor", "G# minor", "C minor", "F minor"];
-
-var contScales = ["F major", "E&#9837 major", "D minor", "C minor"];
+var contScales = ["C major", "E major"];
 	
-var chroScales = [	"C", "C# or D&#9837", "D", "D# or E&#9837", "F", "F# or G&#9837", "G", "G# or A&#9837", "A", 
-					"A# or B&#9837", "B"]
-
-var arpeggios = [	"B major", "B&#9837 major", "E&#9837 major", "A&#9837 major", "D&#9837 major",
-					"C# minor", "G# minor", "C minor", "F minor"];
+var arpeggios = ["G major", "D major", "A major", "D minor", "G minor"];
 						
-
+var broChords = ["F major", "E major"];
 
 function generateTest(type){
 
@@ -35,15 +28,6 @@ function generateTest(type){
 				document.getElementById("contScale").innerHTML = "Finished!";
 			}
 			break;
-		case "chroScale":
-			if (chroScales.length > 0){
-				var chroScaleIndex = Math.floor((Math.random() * chroScales.length));
-				document.getElementById("chroScale").innerHTML = chroScales[chroScaleIndex];
-				chroScales.splice(chroScaleIndex, 1);
-			}else{
-				document.getElementById("chroScale").innerHTML = "Finished!";
-			}
-			break;
 		case "arpeggio":
 			if (arpeggios.length > 0){
 				var arpeggioIndex = Math.floor((Math.random() * arpeggios.length));
@@ -52,7 +36,16 @@ function generateTest(type){
 			}else{
 				document.getElementById("arpeggio").innerHTML = "Finished!";
 			}
-			break;		
+			break;	
+		case "broChord":
+			if (broChords.length > 0){
+				var broChordIndex = Math.floor((Math.random() * broChords.length));
+				document.getElementById("broChord").innerHTML = broChords[broChordIndex];
+				broChords.splice(broChordIndex, 1);
+			}else{
+				document.getElementById("broChord").innerHTML = "Finished!";
+			}
+			break;				
 	}
 }
 

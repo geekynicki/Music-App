@@ -1,19 +1,14 @@
 
-//window.onload="initialise()";
+var scales = ["A major", "E major", "B major", "B&#9837 major", "E&#9837 major", "B minor", "G minor", "C minor"];
 
-var scales = [	"B major", "B&#9837 major", "E&#9837 major", "A&#9837 major", "D&#9837 major",
-				"C# minor", "G# minor", "C minor", "F minor"];
-
-var contScales = ["F major", "E&#9837 major", "D minor", "C minor"];
+var contScales = ["A major", "A harmonic minor"];
 	
-var chroScales = [	"C", "C# or D&#9837", "D", "D# or E&#9837", "F", "F# or G&#9837", "G", "G# or A&#9837", "A", 
-					"A# or B&#9837", "B"]
+var chroScales = ["A&#9837", "C"];
 
-var arpeggios = [	"B major", "B&#9837 major", "E&#9837 major", "A&#9837 major", "D&#9837 major",
-					"C# minor", "G# minor", "C minor", "F minor"];
+var arpeggios = [	"A major (hands together)", "G minor (hands together)", "E major (hands separately)", 
+					"B major (hands separately)", "B&#9837 major (hands separately)", "E&#9837 major (hands separately)", 
+					"B minor (hands separately)", "C minor (hands separately)"];
 						
-
-
 function generateTest(type){
 
 	switch(type){

@@ -1,6 +1,4 @@
 
-//window.onload="initialise()";
-
 var scales = [	"B major", "B&#9837 major", "E&#9837 major", "A&#9837 major", "D&#9837 major",
 				"C# minor", "G# minor", "C minor", "F minor"];
 
